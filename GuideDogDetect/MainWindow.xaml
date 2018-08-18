@@ -1,0 +1,22 @@
+﻿<Window x:Class="GuideDogDetect.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GuideDogDetect"
+        mc:Ignorable="d"
+        Title="MainWindow" Background="#303030" SizeToContent="WidthAndHeight" AllowDrop="True" ResizeMode="NoResize"
+        Closing="Window_Closing" Drop="Window_Drop">
+    <StackPanel Orientation="Horizontal">
+        <StackPanel>
+            <Label FontSize="20" Foreground="WhiteSmoke" Content="再生"/>
+            <Image x:Name="Image_Photo" Width="640" Height="480"/>
+            <Label/>
+        </StackPanel>
+        <StackPanel>
+            <Label FontSize="20" Foreground="WhiteSmoke" Content="判定"/>
+            <Image x:Name="Image_Photo2" Width="640" Height="480"/>
+            <TextBlock x:Name="TextBlock_Message" FontSize="48" Foreground="WhiteSmoke"/>
+        </StackPanel>
+    </StackPanel>
+</Window>
